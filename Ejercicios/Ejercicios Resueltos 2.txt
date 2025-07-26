@@ -1,0 +1,75 @@
+/*
+1. Pregunta al usuario qué día de la semana es. Si la respuesta es "Sábado" o "Domingo", 
+muestra "¡Buen fin de semana!". De lo contrario, muestra "¡Buena semana!".
+*/
+
+let respuestaUsuario = prompt("¿Escribe que dia de la semana es hoy?");
+console.log(respuestaUsuario);
+
+let sabado = "Sabado";
+let domingo = "Domingo"
+
+// opcion 1: Usando condicional ternario con toLowerCase para no distinguir entre mayusculas o minusculas
+
+let mensaje = respuestaUsuario.toLowerCase() === sabado.toLowerCase() || respuestaUsuario.toLowerCase() === domingo.toLowerCase() ? "¡Buen fin de semana!" : "¡Buena semana!";
+alert(mensaje);
+
+// opcion 2: Usando if normal con toLowerCase para no distinguir entre mayusculas o minusculas
+
+if(respuestaUsuario.toLowerCase() === sabado.toLowerCase() || respuestaUsuario.toLowerCase() === domingo.toLowerCase()){
+    alert("¡Buen fin de semana!");
+}else{
+    alert("¡Buena semana!")
+}
+
+
+/*
+2. Verifica si un número ingresado por el usuario es positivo o negativo. Muestra una alerta informativa.
+*/
+
+let numeroUusario = prompt("Ingresa un numero cualquiera de preferencia positivo o negativo:");
+console.log(numeroUusario);
+
+let mensaje = numeroUusario > 0 ? "El numero ingresado es positivo" : "El numero ingresado es negativo";
+
+alert(mensaje + " tu numero ingresado: " + numeroUusario);
+
+
+/*
+3. Crea un sistema de puntuación para un juego. 
+Si la puntuación es mayor o igual a 100, muestra "¡Felicidades, has ganado!". 
+En caso contrario, muestra "Intentalo nuevamente para ganar."
+*/
+
+alert("¡Bienvenido al sistema de puntuacion!");
+let puntajeUsuario = prompt("Ingresa el maximo puntaje obtenido en el juego: ");
+console.log(puntajeUsuario);
+
+if(puntajeUsuario >= 100){
+    alert("¡Felicidades, has ganado!");
+}else{
+    alert("¡Intentalo nuevamente para ganar!");
+}
+
+
+/*
+4. Crea un mensaje que informe al usuario sobre el saldo de su cuenta, 
+utilizando un template string para incluir el valor del saldo.
+*/
+
+let saldo = 8000;
+
+alert(`Este es valor de tu cuenta: $ ${saldo}`);
+
+
+/*
+5.Pide al usuario que ingrese su nombre mediante un prompt. 
+Luego, muestra una alerta de bienvenida usando ese nombre.
+*/
+
+let nombreUsuario = prompt("Por favor ingresa tu Nombre: ");
+console.log(nombreUsuario);
+
+alert(`¡Bienvenido ${nombreUsuario}!`);
+
+
