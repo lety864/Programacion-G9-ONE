@@ -1,0 +1,77 @@
+/* 
+1. Crea un contador que comience en 1 y vaya hasta 10 usando un bucle 'while'. 
+Muestra cada número.
+*/
+
+let contador=0;
+
+while(contador <10){
+    contador = contador + 1;
+    alert(contador);
+}
+
+/*
+2. Crea un contador que comience en 10 y vaya hasta 0 usando un bucle 'while'. 
+Muestra cada número.
+*/
+
+let contador = 11; 
+
+while(contador > 0){
+    contador=contador - 1;
+    alert(contador);
+}
+
+
+/*
+3. Crea un programa de cuenta regresiva. 
+Pide un número y cuenta desde 0 hasta ese número utilizando un bucle 'while' en la consola del navegador.
+*/
+
+
+let numeroUsuario = prompt("Ingresa un numero para hacer una cuenta regresiva: ");
+console.log(numeroUsuario);
+
+// este mas 1 es porque cuando entra en el bucle se muestra un numero menor al que ingreso
+let contador = numeroUsuario; 
+
+while(contador > 0){
+    contador = contador - 1;
+    alert(contador)
+}
+
+/*
+3. Crea un programa de cuenta regresiva. 
+Pide un número y cuenta desde 0 hasta ese número utilizando un bucle 'while' en la consola del navegador.
+*/
+
+
+let numeroUsuario = prompt("Ingresa un numero para hacer una cuenta regresiva: ");
+console.log(numeroUsuario);
+
+//hay que convertirlo en Entero para poder sumarle 1
+numeroUsuarioInt = parseInt(numeroUsuario);
+
+//Se le suma 1 para que el conteno empieze por el numero ingresado, ya que se le resta uno cuando entra en el bucle
+let contador = numeroUsuarioInt + 1; 
+
+while(contador > 0){
+    contador = contador - 1;
+    alert(contador);
+}
+
+/*
+4. Crea un programa de cuenta progresiva. 
+Pide un número y cuenta desde 0 hasta ese número utilizando un bucle 'while' en la consola del navegador.
+*/
+
+let numeroUsuario = prompt("Ingresa un numero para hacer una cuenta progresiva: ");
+console.log(numeroUsuario);
+
+let contador = 0; 
+
+while(contador < numeroUsuario){
+    contador = contador + 1;
+    alert(contador);
+}
+
